@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- header design -->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container containerNav">
+                <a class="navbar-brand" href="index.html">
+                    Food's<b> Vandersar</b>
+                    <!-- <img decoding="async" src="images/logo.png" class="img-fluid"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home ps-3"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#menu">
+                                <i class="fas fa-utensil-spoon ps-3"></i> Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">
+                                <i class="fas fa-shopping-basket ps-3"></i> Online Order
+                                <span class="position-absolute top-1 start-20 translate-middle badge">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle ps-3"></i> About us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="main-btn" data-bs-toggle="modal" data-bs-target="#modal">Subscribe</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="menu">
+
+        <div class="wrapper menuContent">
+
+            <!-- ======================================================== -->
+            <!-- TITLE -->
+            <div class="text-center">
+                <h1>MENU</h1>
+                <hr style="color: #FFC222;">
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-9">
+                    <!-- Daily menu -->
+
+                    <center>
+                        <h3>Daily Menu</h3>
+                    </center>
+
+                    <div class="accordion" id="MainMenu">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mainMenuOne" aria-expanded="true" aria-controls="mainMenuOne">
+                                    Morning Menu
+                                </button>
+                            </h2>
+                            <div id="mainMenuOne" class="accordion-collapse collapse" data-bs-parent="#MainMenu">
+                                <div class="accordion-body"
+                                    style="background-image: url(images/menu/main_menu/capuccino.jpg); background-size: 100%;">
+                                    <table class="menu-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <h3>Breakfast Classics</h3>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Classic American Breakfast - Scrambled eggs, crispy
+                                                            bacon, hash browns,
+                                                            toast. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $10.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Blueberry Pancakes - Served with maple syrup. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $8.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Veggie Omelette - Light and fluffy omelette filled with
+                                                            fresh vegetables. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $9.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mainMenuTwo" aria-expanded="false" aria-controls="mainMenuTwo">
+                                    Lunch Menu
+                                </button>
+                            </h2>
+                            <div id="mainMenuTwo" class="accordion-collapse collapse" data-bs-parent="#MainMenu">
+                                <div class="accordion-body"
+                                    style="background-image: url(images/menu/main_menu/lunch_menu.jpg); background-size: 100%;">
+                                    <table class="menu-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <h3>Lunch Specials</h3>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>Classic Burger - Grilled beef patty, cheddar cheese,
+                                                            lettuce, tomato,
+                                                            onion, fries. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $12.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Grilled Chicken Caesar Salad - Romaine lettuce, grilled
+                                                            chicken,
+                                                            croutons, parmesan, Caesar dressing. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $11.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>BLT Sandwich - Bacon, lettuce, tomato, mayonnaise,
+                                                            served with fries. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $9.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Special of the Day (Lunch) - Fish Tacos - Fresh fish,
+                                                            homemade salsa,
+                                                            corn tortillas, served with rice and black beans. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $14.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#mainMenuThree" aria-expanded="false" aria-controls="mainMenuTrhee">
+                                    Dinner Menu
+                                </button>
+                            </h2>
+                            <div id="mainMenuThree" class="accordion-collapse collapse" data-bs-parent="#MainMenu">
+                                <div class="accordion-body"
+                                    style="background-image: url(images/menu/main_menu/beef.jpg); background-size: 100%;">
+                                    <table class="menu-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <h3>Dinner Delights</h3>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>BBQ Pork Chop - Grilled pork chop, homemade barbecue sauce,
+                                                            grilled
+                                                            corn, mashed potatoes. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $16.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>New York Strip Steak - Grilled beef steak, seasonal
+                                                            vegetables, roasted
+                                                            potatoes. <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $18.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Rosemary Roasted Chicken - Oven-roasted chicken, rosemary
+                                                            sauce, grilled
+                                                            vegetables, pilaf rice.
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $15.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>Special of the Day (Dinner) - Chef's Gourmet Burger - Wagyu
+                                                            beef burger,
+                                                            sautéed mushrooms, Swiss cheese, served with truffle fries.
+                                                            <br>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <span class='qt'>QT: <input type="number" value="0"
+                                                                            id="quantite"></span>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <h6>
+                                                                        Price: $2.99 <input type="checkbox" id="toggle"
+                                                                            class="hidden">
+                                                                    </h6>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+
+                    <!-- Pate salee -->
+
+                    <center>
+                        <h3>Dishes</h3>
+                    </center>
+
+                    <div class="accordion" id="PateSale">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pateSaleOne" aria-expanded="true" aria-controls="pateSaleOne">
+                                    Spaghetti Carbonara
+                                </button>
+                            </h2>
+                            <div id="pateSaleOne" class="accordion-collapse collapse" data-bs-parent="#PateSale">
+                                <div class="accordion-body">
+
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Carbonara.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br> Scrambled eggs, crispy bacon, and parmesan cheese served
+                                                    with perfectly cooked
+                                                    spaghetti. A classic Italian favorite. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $12.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pateSaleTwo" aria-expanded="false" aria-controls="pateSaleTwo">
+                                    Fettuccine Alfredo
+                                </button>
+                            </h2>
+                            <div id="pateSaleTwo" class="accordion-collapse collapse" data-bs-parent="#PateSale">
+                                <div class="accordion-body">
+
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Fettuccine.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br> Creamy fettuccine pasta served with a rich Alfredo sauce,
+                                                    topped with freshly
+                                                    grated parmesan cheese. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $14.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pateSaleThree" aria-expanded="false" aria-controls="pateSaleThree">
+                                    Penne Arrabbiata
+                                </button>
+                            </h2>
+                            <div id="pateSaleThree" class="accordion-collapse collapse" data-bs-parent="#PateSale">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Penne.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>Penne pasta tossed in a spicy tomato sauce with garlic, red
+                                                    pepper flakes, and
+                                                    fresh basil. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $11.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <!-- Pate sucree -->
+
+                    <center>
+                        <h3>Desert</h3>
+                    </center>
+
+                    <div class="accordion" id="PateSucre">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#PateSucreOne" aria-expanded="true" aria-controls="PateSucreOne">
+                                    Chocolate Fudge Brownie
+                                </button>
+                            </h2>
+                            <div id="PateSucreOne" class="accordion-collapse collapse" data-bs-parent="#PateSucre">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Brownie.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>Rich and gooey chocolate fudge brownie served warm with a
+                                                    scoop of vanilla ice
+                                                    cream. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $6.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#PateSucreTwo" aria-expanded="false" aria-controls="PateSucreTwo">
+                                    Strawberry Cheesecake
+                                </button>
+                            </h2>
+                            <div id="PateSucreTwo" class="accordion-collapse collapse" data-bs-parent="#PateSucre">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Strawberry_Cheesecake.jpg"
+                                                        class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>Creamy New York-style cheesecake topped with fresh
+                                                    strawberries and a strawberry
+                                                    glaze. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $7.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#PateSucreThree" aria-expanded="false"
+                                    aria-controls="PateSucreThree">
+                                    Tiramisu
+                                </button>
+                            </h2>
+                            <div id="PateSucreThree" class="accordion-collapse collapse" data-bs-parent="#PateSucre">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/pate/Tiramisu.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>Classic Italian tiramisu dessert with layers of
+                                                    coffee-soaked ladyfingers and
+                                                    mascarpone cheese. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $8.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+                    <!-- Drink -->
+
+                    <center>
+                        <h3>Alcohol Drinks</h3>
+                    </center>
+
+                    <div class="accordion" id="alcoholDrink">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#alcoholDrinkOne" aria-expanded="true"
+                                    aria-controls="alcoholDrinkOne">
+                                    Margarita
+                                </button>
+                            </h2>
+                            <div id="alcoholDrinkOne" class="accordion-collapse collapse"
+                                data-bs-parent="#alcoholDrink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/Margarita.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>A refreshing cocktail made with tequila, orange liqueur, and
+                                                    lime juice, served
+                                                    with a salted rim. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $9.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#alcoholDrinkTwo" aria-expanded="false"
+                                    aria-controls="alcoholDrinkTwo">
+                                    Mojito
+                                </button>
+                            </h2>
+                            <div id="alcoholDrinkTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#alcoholDrink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/Mojito.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>A refreshing cocktail made with rum, mint, sugar, lime
+                                                    juice, and soda water,
+                                                    garnished with mint
+                                                    leaves and lime wedges. <br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $8.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#alcoholDrinkThree" aria-expanded="false"
+                                    aria-controls="alcoholDrinkThree">
+                                    Old Fashioned
+                                </button>
+                            </h2>
+                            <div id="alcoholDrinkThree" class="accordion-collapse collapse"
+                                data-bs-parent="#alcoholDrink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/Old_Fashioned.jpg"
+                                                        class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>A classic cocktail made with bourbon, sugar, bitters, ice,
+                                                    and an orange zest
+                                                    garnish.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $10.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <center>
+                        <h3>No-Alcohol Drinks</h3>
+                    </center>
+
+                    <div class="accordion" id="Drink">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#DrinkOne" aria-expanded="true" aria-controls="DrinkOne">
+                                    Lemonade
+                                </button>
+                            </h2>
+                            <div id="DrinkOne" class="accordion-collapse collapse" data-bs-parent="#Drink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/limonade.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>A refreshing drink made with fresh lemon juice, water, and
+                                                    sugar.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $3.49
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#DrinkTwo" aria-expanded="false" aria-controls="DrinkTwo">
+                                    Virgin Pina Colada
+                                </button>
+                            </h2>
+                            <div id="DrinkTwo" class="accordion-collapse collapse" data-bs-parent="#Drink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/Pina_Colada.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>A delicious tropical drink made with coconut cream,
+                                                    pineapple juice, and ice.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $4.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#DrinkThree" aria-expanded="false" aria-controls="DrinkThree">
+                                    Iced Tea
+                                </button>
+                            </h2>
+                            <div id="DrinkThree" class="accordion-collapse collapse" data-bs-parent="#Drink">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/drink/ice_tea.jpg" class="full-img"></img>
+                                                </td>
+                                                <td>
+                                                    <!-- <br> <span class='thin'> Pates </span> -->
+                                                    <br>Refreshing iced tea served sweetened or unsweetened with
+                                                    ice.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $2.49
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+                    <!-- Vegetarians Menu -->
+
+                    <center>
+                        <h3>Vegetarians Menu</h3>
+                    </center>
+
+                    <div class="accordion" id="VegetarianMenu">
+                        <!-- First Vegetarian Dish -->
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#VegetarianDishOne" aria-expanded="true"
+                                    aria-controls="VegetarianDishOne">
+                                    Vegetable Stir-Fry
+                                </button>
+                            </h2>
+                            <div id="VegetarianDishOne" class="accordion-collapse collapse"
+                                data-bs-parent="#VegetarianMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/vegetarians/Stir-Fry.jpg" class="full-img"
+                                                        alt="Vegetable Stir-Fry">
+                                                </td>
+                                                <td>
+                                                    <br>A delicious vegetable stir-fry with a variety of colorful
+                                                    vegetables and tofu in a savory sauce. Served over steamed rice.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $16.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Vegetarian Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#VegetarianDishTwo" aria-expanded="false"
+                                    aria-controls="VegetarianDishTwo">
+                                    Spinach and Mushroom Quesadilla
+                                </button>
+                            </h2>
+                            <div id="VegetarianDishTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#VegetarianMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/vegetarians/Spinach.jpg" class="full-img"
+                                                        alt="Spinach and Mushroom Quesadilla">
+                                                </td>
+                                                <td>
+                                                    <br>Spinach and mushroom quesadilla with melted cheese, served with
+                                                    salsa and sour cream.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $14.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Vegetarian Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#VegetarianDishThree" aria-expanded="false"
+                                    aria-controls="VegetarianDishThree">
+                                    Caprese Salad
+                                </button>
+                            </h2>
+                            <div id="VegetarianDishThree" class="accordion-collapse collapse"
+                                data-bs-parent="#VegetarianMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/vegetarians/Caprese_Salad.jpg"
+                                                        class="full-img" alt="Caprese Salad">
+                                                </td>
+                                                <td>
+                                                    <br>Caprese salad with fresh tomatoes, mozzarella, basil, and
+                                                    balsamic glaze.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $12.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Vegetarian Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#VegetarianDishFour" aria-expanded="false"
+                                    aria-controls="VegetarianDishFour">
+                                    Margherita Pizza
+                                </button>
+                            </h2>
+                            <div id="VegetarianDishFour" class="accordion-collapse collapse"
+                                data-bs-parent="#VegetarianMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/vegetarians/Margherita_Pizza.jpg"
+                                                        class="full-img" alt="Margherita Pizza">
+                                                </td>
+                                                <td>
+                                                    <br>Classic Margherita pizza with tomato sauce, fresh mozzarella,
+                                                    basil, and a drizzle of olive oil.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $15.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+                    <!-- Gluten-free Menu -->
+
+                    <center>
+                        <h3>Gluten-free Menu</h3>
+                    </center>
+
+                    <div class="accordion" id="GlutenFreeMenu">
+
+                        <!-- First Gluten-Free Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#GlutenFreeDishOne" aria-expanded="true"
+                                    aria-controls="GlutenFreeDishOne">
+                                    Quinoa Salad
+                                </button>
+                            </h2>
+                            <div id="GlutenFreeDishOne" class="accordion-collapse collapse"
+                                data-bs-parent="#GlutenFreeMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/gluten_free/Quinoa_Salad.jpg" class="full-img"
+                                                        alt="Quinoa Salad">
+                                                </td>
+                                                <td>
+                                                    <br>Healthy quinoa salad with mixed vegetables, chickpeas, and a
+                                                    zesty lemon vinaigrette.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $13.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Gluten-Free Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#GlutenFreeDishTwo" aria-expanded="false"
+                                    aria-controls="GlutenFreeDishTwo">
+                                    Grilled Salmon
+                                </button>
+                            </h2>
+                            <div id="GlutenFreeDishTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#GlutenFreeMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/fish/Grilled_Salmon.jpg" class="full-img"
+                                                        alt="Grilled Salmon">
+                                                </td>
+                                                <td>
+                                                    <br>Grilled salmon fillet with a lemon herb marinade, served with
+                                                    steamed asparagus and quinoa.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $18.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Gluten-Free Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#GlutenFreeDishThree" aria-expanded="false"
+                                    aria-controls="GlutenFreeDishThree">
+                                    Vegetable Quiche
+                                </button>
+                            </h2>
+                            <div id="GlutenFreeDishThree" class="accordion-collapse collapse"
+                                data-bs-parent="#GlutenFreeMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/gluten_free/Vegetable_Quiche.jpg"
+                                                        class="full-img" alt="Vegetable Quiche">
+                                                </td>
+                                                <td>
+                                                    <br>Delicious gluten-free vegetable quiche made with a flaky almond
+                                                    flour crust and filled with fresh vegetables and cheese.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $16.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Gluten-Free Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#GlutenFreeDishFour" aria-expanded="false"
+                                    aria-controls="GlutenFreeDishFour">
+                                    Balsamic Glazed Chicken
+                                </button>
+                            </h2>
+                            <div id="GlutenFreeDishFour" class="accordion-collapse collapse"
+                                data-bs-parent="#GlutenFreeMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/gluten_free/Balsamic_Glazed_Chicken.jpg"
+                                                        class="full-img" alt="Balsamic Glazed Chicken">
+                                                </td>
+                                                <td>
+                                                    <br>Tender balsamic glazed chicken breast served with roasted sweet
+                                                    potatoes and steamed broccoli.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $17.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+                    <!-- Fish Menu -->
+
+                    <center>
+                        <h3>Fish Menu</h3>
+                    </center>
+
+                    <div class="accordion" id="FishMenu">
+
+                        <!-- First Fish Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#FishDishOne" aria-expanded="true" aria-controls="FishDishOne">
+                                    Grilled Salmon
+                                </button>
+                            </h2>
+                            <div id="FishDishOne" class="accordion-collapse collapse" data-bs-parent="#FishMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/fish/Grilled_Salmon.jpg" class="full-img"
+                                                        alt="Grilled Salmon">
+                                                </td>
+                                                <td>
+                                                    <br>Grilled salmon fillet with a lemon herb marinade, served with
+                                                    steamed asparagus and quinoa.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $18.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Fish Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#FishDishTwo" aria-expanded="false" aria-controls="FishDishTwo">
+                                    Lemon Butter Shrimp Pasta
+                                </button>
+                            </h2>
+                            <div id="FishDishTwo" class="accordion-collapse collapse" data-bs-parent="#FishMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/fish/Lemon_Butter_Shrimp_Pasta.jpg"
+                                                        class="full-img" alt="Lemon Butter Shrimp Pasta">
+                                                </td>
+                                                <td>
+                                                    <br>Tender shrimp cooked in a lemon butter sauce, served over
+                                                    linguine pasta with a sprinkle of parsley.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $19.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Fish Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#FishDishThree" aria-expanded="false" aria-controls="FishDishThree">
+                                    Tuna Steak Salad
+                                </button>
+                            </h2>
+                            <div id="FishDishThree" class="accordion-collapse collapse" data-bs-parent="#FishMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/fish/Tuna_Steak_Salad.jpg" class="full-img"
+                                                        alt="Tuna Steak Salad">
+                                                </td>
+                                                <td>
+                                                    <br>Seared tuna steak served over a bed of mixed greens with
+                                                    balsamic vinaigrette dressing.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $21.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Fish Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#FishDishFour" aria-expanded="false" aria-controls="FishDishFour">
+                                    Fish Tacos
+                                </button>
+                            </h2>
+                            <div id="FishDishFour" class="accordion-collapse collapse" data-bs-parent="#FishMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/fish/Fish_Tacos.jpg" class="full-img"
+                                                        alt="Fish Tacos">
+                                                </td>
+                                                <td>
+                                                    <br>Fresh fish tacos with homemade salsa, corn tortillas, served
+                                                    with rice and black beans.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $14.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Meat Menu -->
+
+                    <center>
+                        <h3>Meat Menu</h3>
+                    </center>
+
+                    <div class="accordion" id="MeatMenu">
+                        <!-- First Meat Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#MeatDishOne" aria-expanded="true" aria-controls="MeatDishOne">
+                                    Peppered Steak
+                                </button>
+                            </h2>
+                            <div id="MeatDishOne" class="accordion-collapse collapse" data-bs-parent="#MeatMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/meat/Peppered_Steak.jpg" class="full-img"
+                                                        alt="Peppered Steak">
+                                                </td>
+                                                <td>
+                                                    <br>Succulent peppered steak served with crispy roasted potatoes and
+                                                    grilled vegetables.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $24.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Meat Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#MeatDishTwo" aria-expanded="false" aria-controls="MeatDishTwo">
+                                    Grilled Lamb Chops
+                                </button>
+                            </h2>
+                            <div id="MeatDishTwo" class="accordion-collapse collapse" data-bs-parent="#MeatMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/meat/Grilled_Lamb_Chops.jpg" class="full-img"
+                                                        alt="Grilled Lamb Chops">
+                                                </td>
+                                                <td>
+                                                    <br>Grilled lamb chops drizzled with a fresh mint sauce. Served with
+                                                    garlic mashed potatoes and grilled asparagus.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $28.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Meat Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#MeatDishThree" aria-expanded="false" aria-controls="MeatDishThree">
+                                    Beef Stroganoff
+                                </button>
+                            </h2>
+                            <div id="MeatDishThree" class="accordion-collapse collapse" data-bs-parent="#MeatMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/meat/Beef_Stroganoff.jpg" class="full-img"
+                                                        alt="Beef Stroganoff">
+                                                </td>
+                                                <td>
+                                                    <br>Tender strips of beef cooked in a creamy mushroom and onion
+                                                    sauce, served over a bed of buttered egg noodles.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $22.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Meat Dish -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#MeatDishFour" aria-expanded="false" aria-controls="MeatDishFour">
+                                    BBQ Pork Ribs
+                                </button>
+                            </h2>
+                            <div id="MeatDishFour" class="accordion-collapse collapse" data-bs-parent="#MeatMenu">
+                                <div class="accordion-body">
+                                    <table class='menu-table'>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/menu/meat/BBQ_Pork_Ribs.jpg" class="full-img"
+                                                        alt="BBQ Pork Ribs">
+                                                </td>
+                                                <td>
+                                                    <br>Succulent BBQ pork ribs smothered in smoky barbecue sauce.
+                                                    Served with coleslaw and seasoned fries.<br>
+                                                    <span class='qt'>QT: <input type="number" value="0" id="quantite">
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class='price_in_menu'>Price: $19.99
+                                                        <input type="checkbox" id="toggle" class="hidden">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="color: #FFC222;">
+
+        </div>
+
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal logModals" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="title">Sign up</span>
+                    <span class="subtitle">Create a free account with your email.</span>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-container">
+                            <input type="text" class="input" placeholder="Full Name">
+                            <input type="email" class="input" placeholder="Email">
+                            <input type="password" class="input" placeholder="Password">
+                        </div>
+                        <button>Sign up</button>
+                    </form>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <p>Have an account? <a href="">Log in</a> </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section footer-->
+    <footer id="footer">
+        <div class="footer pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="profile-icon pb-4 text-center">
+                            <a href="https://www.youtube.com/channel/UCXrLftfMpZKREEyd1q7v5lA" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/Vandersar02" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/lee-j-vandersar-st-cyr-0210" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/stcyr_vandersar/?next=%2F" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="footer-copy">
+                            <div class="copy-right text-center pt-5">
+                                <p class="text-light">© 2023. @<a href="https://aesthetic-starburst-6a44ea.netlify.app/"
+                                        target="_blank" style="color: #FFC222;">St Cyr Lee J. Vandersar</a>. All rights
+                                    reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

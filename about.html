@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- header design -->
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container containerNav">
+                <a class="navbar-brand" href="index.html">
+                    Food's<b> Vandersar</b>
+                    <!-- <img decoding="async" src="images/logo.png" class="img-fluid"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home ps-3"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">
+                                <i class="fas fa-utensil-spoon ps-3"></i> Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">
+                                <i class="fas fa-shopping-basket ps-3"></i> Online Order
+                                <span class="position-absolute top-1 start-20 translate-middle badge">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">
+                                <i class="fas fa-info-circle ps-3"></i> About us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="main-btn" data-bs-toggle="modal" data-bs-target="#modal">Subscribe</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container-fluid px-0 faq-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>FAQ'<span>S.</span></h1>
+                        <p>Still have questions about managed services and what we do? Don’t worry! You’re in the right
+                            place. Here are the most commonly asked questions and our answers:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section-3 Why Us-->
+    <section id="why_us">
+        <div class="about-section wrapper">
+            <div class="text-content text-center">
+                <h1> Why us ?</h1>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+                        <div class="card border-0">
+                            <img decoding="async" src="images/img/img-1.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 text-sec">
+                        <h2>We pride ourselves on making real food from the best ingredients.</h2>
+                        <p>Our commitment to quality starts with our ingredients. We believe in
+                            using only the finest and freshest produce, meats, and seasonings to create authentic and
+                            flavorful dishes. Our chefs are passionate about crafting real food that reflects our
+                            dedication to culinary excellence. When you dine with us, you'll experience the difference
+                            that quality ingredients make.</p>
+                    </div>
+
+                </div>
+
+                <div class="container food-type">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                            <h2>We make everything by hand with the best possible ingredients.</h2>
+                            <p>We take pride in crafting every dish by hand, using only the finest and
+                                freshest ingredients available. Our commitment to quality shines through in every bite
+                                you
+                                take. We believe that great food starts with great ingredients, and that's why we source
+                                locally whenever possible.</p>
+                            <ul class="list-unstyled py-3">
+                                <li>Our dedication to excellence ensures that every meal is a masterpiece.</li>
+                                <li>We carefully select the best ingredients to create memorable dining experiences.
+                                </li>
+                                <li>Experience the difference of handcrafted cuisine at Food's Vandersar.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-7 col-md-12">
+                            <div class="card border-0">
+                                <img decoding="async" src="images/img/img-2.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section Comment in Testimonials-->
+    <section id="comment">
+        <div class="wrapper testimonial-section">
+            <div class="container text-center">
+                <div class="text-center pb-4">
+                    <h1>Testimonial</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <img decoding="async" src="images/review/review-1.jpg">
+                                        <p>"I had an amazing dining experience at this restaurant. The food was
+                                            exceptional, and the staff was incredibly attentive. I can't wait to come
+                                            back!"</p>
+                                        <h5>Johnthan Doe</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img decoding="async" src="images/review/review-6.jpg">
+                                        <p>"The ambiance at Food'sVandersar is perfect for a romantic dinner. My
+                                            partner and I celebrated our anniversary there, and it was a night to
+                                            remember. The chef's tasting menu was outstanding!"</p>
+                                        <h5>Maccy Doe</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img decoding="async" src="images/review/review-9.jpg">
+                                        <p>"The cocktails are top-notch. I'm a bit of a mixology
+                                            enthusiast, and their unique drink menu never disappoints. A great place to
+                                            unwind with friends."</p>
+                                        <h5>John Doe</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Answers -->
+    <section id="q&a">
+        <div class="myaccordion wrapper">
+            <div class="container containerAccordion">
+                <div class="text-center pb-4">
+                    <h1>Q & A</h1>
+                </div>
+                <div class="accordion accordion-flush">
+
+                    <div class="accordion-item" id="question1">
+                        <a class="accordion-link" href="#question1">
+                            <div class="flex">
+                                <h3>What are the restaurant's operating hours?</h3>
+                            </div>
+                            <i class="icon ion-md-arrow-forward"></i>
+                            <i class="icon ion-md-arrow-down"></i>
+                        </a>
+                        <div class="answer">
+                            <p>We are open seven days a week. Our hours are from 06:00 AM to 10h:00 AM for breakfast,
+                                from 11:00 AM to 2:30 PM for lunch and from 4:30 PM to 08:00 PM for dinner.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="accordion-item" id="question2">
+                        <a class="accordion-link" href="#question2">
+                            <div class="flex">
+                                <h3>Can I make a reservation online?</h3>
+                            </div>
+                            <i class="icon ion-md-arrow-forward"></i>
+                            <i class="icon ion-md-arrow-down"></i>
+                        </a>
+                        <div class="answer">
+                            <p>Yes, you can book a table online using the contact us section. You can also
+                                call us at (312) 555-6789 to make a reservation over the phone.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="accordion-item" id="question3">
+                        <a class="accordion-link" href="#question3">
+                            <div class="flex">
+                                <h3> Do you offer vegetarian and gluten-free options?</h3>
+
+                            </div>
+                            <i class="icon ion-md-arrow-forward"></i>
+                            <i class="icon ion-md-arrow-down"></i>
+                        </a>
+                        <div class="answer">
+                            <p>Absolutely! We have a variety of vegetarian and gluten-free options on our menu to
+                                accommodate our guests' dietary needs. Feel free to ask our staff for recommendations.
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="accordion-item" id="question4">
+                        <a class="accordion-link" href="#question4">
+                            <div>
+                                <h3>Do you host private events and group reservations?</h3>
+                            </div>
+                            <i class="icon ion-md-arrow-forward"></i>
+                            <i class="icon ion-md-arrow-down"></i>
+                        </a>
+                        <div class="answer">
+                            <p>Yes, we welcome private events and group reservations. Please contact us to discuss your
+                                specific needs, and we will be happy to assist you in planning your event with us.</p>
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="team">
+        <div class="wrapper teamContent">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center"><strong>Team</strong></h1>
+                    <hr>
+                    <div class="col-md-3">
+                        <h4 class="text-center"><strong>Manager</strong></h4>
+                        <hr>
+                        <div class="profile-card-10"><img src="images/team/review-5.jpg" class="img img-responsive">
+                            <div class="profile-name">Jacques Martin</div>
+                            <div class="profile-username">@jacquesmartin</div>
+                            <div class="profile-icons-team">
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="profile-description">
+                                Jacques is a 45-year-old businessman from Lyon who appreciates fine dining. He's in Lyon
+                                for a business trip.
+                            </div>
+                            <div class="profile-location">France - Lyon</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-center"><strong>Cooker</strong></h4>
+                        <hr>
+                        <div class="profile-card-10"><img src="images/team/review-2.jpg" class="img img-responsive">
+                            <div class="profile-name">Sophie Dupont</div>
+                            <div class="profile-username">@sophiedupont</div>
+                            <div class="profile-icons-team">
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="profile-description">Sophie is a 28-year-old graphic designer from Paris, who
+                                enjoys cooking and trying new recipes. She's outgoing and currently on vacation in Nice.
+                            </div>
+                            <div class="profile-location">Paris {Nice}</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-center"><strong>Cooker</strong></h4>
+                        <hr>
+                        <div class="profile-card-10"><img src="images/team/review-3.jpg" class="img img-responsive">
+                            <div class="profile-name">David Smith</div>
+                            <div class="profile-username">@davidsmith</div>
+                            <div class="profile-icons-team">
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="profile-description">David is a 27-year-old retired literature enthusiast from
+                                London who loves world cuisine.</div>
+                            <div class="profile-location">Rome - Italie</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4 class="text-center"><strong>Manager</strong></h4>
+                        <hr>
+                        <div class="profile-card-10"><img src="images/team/review-8.jpg" class="img img-responsive">
+                            <div class="profile-name">Maria Lopez</div>
+                            <div class="profile-username">@marialopez</div>
+                            <div class="profile-icons-team">
+                                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="profile-description">
+                                Maria is a 21-year-old student from Barcelona, studying in Milan. She's passionate about
+                                music, dance, and meeting new people.
+                            </div>
+                            <div class="profile-location">Milan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactus">
+        <div class="wrapper contactWrapper">
+            <h1 class="text-center"><strong>Feel free to contact Us</strong></h1>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            <h3>Name</h3>
+                                        </label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name"
+                                            required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">
+                                            <h3>Email Address</h3>
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span
+                                                    class="glyphicon glyphicon-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter email" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">
+                                            <h3>Subject</h3>
+                                        </label>
+                                        <select id="subject" name="subject" class="form-control" required="required">
+                                            <option value="question">A question</option>
+                                            <option value="suggestions">A suggestions</option>
+                                            <option value="reservation">A reservation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            <h3>Message</h3>
+                                        </label>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25"
+                                            required="required" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" class="main-btn" id="btnContactUs">
+                                        Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-4">
+                        <form>
+                            <h2>Coordinates</h2>
+                            <address>
+                                <span class="fas fa-map-marker-alt"></span> 123 Main Street
+                                Chicago, IL 60601
+                                USA<br>
+                                <span class="fas fa-phone-alt"></span> (312) 555-6789
+                            </address>
+                            <address>
+                                <strong>E-Mail</strong><br>
+                                <a href="mailto:restaurant.vandersar@gmail.com" target="_blank">
+                                    <span class="fas fa-envelope-open"></span> restaurant.vandersar@gmail.com
+                                </a>
+                            </address>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal logModals" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="title">Sign up</span>
+                    <span class="subtitle">Create a free account with your email.</span>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-container">
+                            <input type="text" class="input" placeholder="Full Name">
+                            <input type="email" class="input" placeholder="Email">
+                            <input type="password" class="input" placeholder="Password">
+                        </div>
+                        <button>Sign up</button>
+                    </form>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <p>Have an account? <a href="">Log in</a> </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section footer-->
+    <footer id="footer">
+        <div class="footer pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="profile-icon pb-4 text-center">
+                            <a href="https://www.youtube.com/channel/UCXrLftfMpZKREEyd1q7v5lA" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://github.com/Vandersar02" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lee-j-vandersar-st-cyr-0210" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/stcyr_vandersar/?next=%2F" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="footer-copy">
+                            <div class="copy-right text-center pt-5">
+                                <p class="text-light">© 2023. @<a href="https://aesthetic-starburst-6a44ea.netlify.app/"
+                                        target="_blank" style="color: #FFC222;">St Cyr Lee J. Vandersar</a>. All rights
+                                    reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

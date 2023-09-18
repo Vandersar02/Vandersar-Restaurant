@@ -1,0 +1,1087 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+b {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #FFC222;
+  --secondry-color: #346ff9;
+  --red-color: rgb(255, 0, 0);
+  --white-color: #fff;
+  --text-color: #868686;
+  --black-color: #1E1D23;
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 58px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  text-shadow: 1px 0 6px var(--black-color);
+}
+
+h1 span {
+  color: var(--primary-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color);
+  line-height: 3rem;
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--black-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+h6{
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+
+p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--black-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.badge {
+  color: var(--primary-color);
+}
+
+/*
+==========================================
+   Header Design
+==========================================
+*/
+.containerNav {
+  background: var(--black-color);
+  border-radius: 5px;
+}
+
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.725rem;
+  transition: all 0.3s linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--white-color);
+  letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+/*
+==========================================
+   top-banner Design
+==========================================
+*/
+.top-banner {
+  width: 100%;
+  background: url('../images/bg/bg-1.jpg') no-repeat center;
+  background-size: cover;
+  padding: 16rem 0 9rem;
+}
+
+.top-banner p {
+  color: var(--white-color);
+}
+
+/*
+==========================================
+the modals for subsribing 
+==========================================
+*/
+.logModals {
+  max-width: 300px;
+  margin-left: 70%;
+  background: transparent;
+  overflow: auto;
+  border-radius: 16px;
+  color: var(--primary-color);
+}
+
+.modal-header,
+.modal-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/*Inputs box*/
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--black-color);
+  margin: 1rem 0 .5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+.modal-footer {
+  padding: 16px;
+  font-size: .85rem;
+  background-color: var(--black-color);
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.modal-footer a {
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: color .3s ease;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
+
+/*Button*/
+.modal-body button {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.modal-body button:hover {
+  background-color: var(--black-color);
+  color: var(--primary-color);
+}
+
+
+
+
+/*
+==========================================
+  menu Design
+==========================================
+*/
+.menuContent {
+  background: var(--black-color);
+}
+
+.accordion-item:hover {
+  border-color: var(--primary-color);
+}
+
+.menu-table td:first-of-type {
+  width: 30%;
+}
+
+.menu-table {
+  position: relative;
+}
+
+.menu-table td:last-of-type {
+  vertical-align: top;
+  padding-left: 50px;
+}
+
+.qt {
+  font-weight: 400;
+  font-size: 12px;
+  font-size: .8rem;
+  color: var(--primary-color);
+}
+
+.qt .btn {
+  border-radius: 5px;
+  border-color: var(--primary-color);
+}
+
+.price_in_menu {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  color: var(--primary-color);
+}
+
+#quantite {
+  width: 40px;
+  height: 20px;
+  color: var(--primary-color);
+}
+
+.full-img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.full-img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+/*
+==========================================
+ about section Design
+==========================================
+*/
+.about-section {
+  background: var(--black-color);
+}
+
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+  padding-left: 2rem;
+}
+
+.faq-img {
+  width: 100%;
+  background: url('../images/faq/questions.jpg') no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+
+.faq-img p {
+  color: var(--white-color);
+}
+
+.myaccordion {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerAccordion {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item {
+  background-color: var(--black-color);
+  border-radius: .4rem;
+}
+
+.accordion-item hr {
+  border: 1px solid var(--text-color);
+}
+
+.accordion-link {
+  font-size: 1.6rem;
+  color: var(--white-color);
+  text-decoration: none;
+  background-color: var(--black-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.accordion-link i {
+  color: var(--white-color);
+  padding: 0.5rem;
+
+}
+
+.accordion-link div {
+  display: flex;
+}
+
+.accordion-link .ion-md-arrow-down {
+  display: none;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--black-color);
+  transition: max-height 650ms;
+}
+
+.answer p {
+  color: var(--white-color);
+  font-size: 15px;
+  padding: 1rem;
+}
+
+.accordion-item:target .answer {
+  max-height: 5rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-forward {
+  display: none
+}
+
+.accordion-item:target .accordion-link .ion-md-arrow-down {
+  display: block;
+}
+
+
+/*
+==========================================
+ About - Why_Us section Design
+==========================================
+*/
+.food-type {
+  padding-top: 3.25rem;
+}
+
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.food-type ul li::before {
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+/*
+==========================================
+ explore food section Design
+==========================================
+*/
+.foodBackground {
+  background: var(--black-color);
+}
+
+.explore-food .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+
+.explore-food .card img {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.explore-food .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid var(--text-color);
+}
+
+.explore-food p {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+/* 
+========================================
+Order Section
+========================================
+*/
+.orderContent,
+.orderContainer {
+  background: -webkit-linear-gradient(#333737, #404650);
+}
+
+.orderContainer {
+  justify-content: center;
+  display: flex;
+}
+
+.thin {
+  font-weight: 400;
+}
+
+.small {
+  font-size: 12px;
+  font-size: .8rem;
+}
+
+.half-input-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.half-input-table td:first-of-type {
+  border-right: 10px solid var(--black-color);
+  width: 50%;
+}
+
+.window {
+  height: 540px;
+  width: auto;
+  background: var(--black-color);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  z-index: 10;
+}
+
+/* =====Order Summary */
+.order-info {
+  height: 100%;
+  width: 75%;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.price {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+  color: var(--primary-color);
+}
+
+.order-table td:first-of-type {
+  width: 10%;
+}
+
+.order-table {
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: var(--primary-color);
+}
+
+.order-table td:last-of-type {
+  vertical-align: top;
+  padding-left: 25px;
+}
+
+.order-info-content {
+  table-layout: fixed;
+
+}
+
+.full-width {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.total {
+  color: var(--primary-color);
+  margin-top: 25px;
+  font-size: 20px;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 30px;
+  right: 27px;
+  left: 35px;
+}
+
+.dense {
+  line-height: 1.2em;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.input-field {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  margin-top: 3px;
+  line-height: 1.5em;
+  font-size: 10px;
+  font-size: 1.2rem;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  color: var(--black-color);
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =====Payment Summary===== */
+.credit-info {
+  background: var(--black-color);
+  height: 100%;
+  width: 25%;
+  color: var(--primary-color);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 14px;
+  font-size: .9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+.dropdown-btn {
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5em;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+.dropdown-btn:after {
+  content: '\25BE';
+  right: 8px;
+  position: absolute;
+}
+
+.dropdown-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+.dropdown-select {
+  display: none;
+}
+
+.credit-card-image {
+  display: block;
+  max-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.credit-info-content {
+  margin-top: 25px;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .window {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+
+  .order-info {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    border-radius: 0px;
+  }
+
+  .credit-info {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    border-radius: 0px;
+  }
+
+  .pay-btn {
+    border-radius: 0px;
+  }
+}
+
+
+/*
+==========================================
+ testimonial section Design
+==========================================
+*/
+.testimonial-section {
+  background: var(--black-color);
+}
+
+.testimonial-section h5 {
+  color: var(--secondry-color);
+  font-size: medium;
+}
+
+
+.testimonial-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background-color: var(--text-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
+.testimonial-section .carousel-caption img {
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-caption p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  color: var(--black-color);
+  padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators {
+  bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button.active {
+  opacity: 1;
+}
+
+/*
+==========================================
+Team section Design
+==========================================
+*/
+.teamContent {
+  background: var(--black-color);
+}
+
+/* Team card */
+/* Tenth card */
+.profile-card-10 {
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  padding: 30px 15px;
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+
+.profile-card-10 img {
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  box-shadow: 0px 0px 0px 2px var(--secondry-color);
+  transition: all 0.25s linear;
+}
+
+.profile-card-10 .profile-name {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.profile-card-10 .profile-location {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.profile-card-10 .profile-description {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.profile-card-10 .profile-icons-team .fab {
+  color: var(--secondry-color);
+  margin: 10px;
+}
+
+.profile-card-10 .profile-icons-team .fab:hover {
+  color: var(--black-color);
+  margin: 10px;
+}
+
+.profile-card-10:hover img {
+  transform: scale(1.1);
+}
+
+/*
+==========================================
+Contact Us section Design
+==========================================
+*/
+
+.contactWrapper{
+  background-image: url(../images/table_granie.jpg);
+  background-size: 100%;
+
+}
+/*
+==========================================
+footer section Design
+==========================================
+*/
+.footer {
+  background: var(--black-color);
+}
+
+.footer .profile-icon a i {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  padding: 0 1rem;
+}
+
+.footer .profile-icon a:hover i {
+  color: var(--primary-color);
+}
+
+
+/* Form Control */
+.newsletter .form-control {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  width: 100%;
+  border-radius: 0;
+  background: transparent;
+  border: 0.1875rem solid var(--white-color);
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.newsletter .main-btn {
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.newsletter:hover .form-control {
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--black-color);
+}
+
+.newsletter:hover .main-btn {
+  background: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+}
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+/*    Responsive Design   */
+@media (max-width: 991px) {
+
+  /*custom classes  */
+  .text-content {
+    width: 100%;
+  }
+
+  /* navbar brand */
+  .navigation-wrap .navbar-brand img {
+    height: 3.8125rem
+  }
+
+  .navigation-wrap {
+    text-align: center;
+    background-color: var(--black-color);
+  }
+
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+    color: var(--white-color);
+  }
+
+  /* Banner Design */
+  .top-banner {
+    padding: 9.375rem 0 9.375rem;
+  }
+
+  /* carousel design */
+  .testimonial-section .carousel-caption p {
+    padding: 0;
+  }
+
+  /* footer link */
+  .footer .footer-social a i {
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* custom css */
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    line-height: 28px;
+  }
+
+  /* top banner */
+  .top-banner {
+    padding: 10.375rem 0 9.375rem;
+  }
+
+  /* carousel design */
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+}
+
+@media (max-width:330px) {
+
+  /* carousel design */
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+}
+@media screen and (max-width:800px){
+  .contact-form{
+    width:90vw;
+  }
+}
+@media screen and (max-width:700px){
+  .contact-form{
+    flex-direction: column-reverse;
+  }
+  .contact-form > *{
+    width:100%;
+  }
+  .contact-form .first-container{
+    padding:40px 0;
+  }
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
